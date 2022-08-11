@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="natural.js" defer></script>
-    <script src="main.js" defer></script>
+    <script type="module" src="natural.js" defer></script>
+    <script type="module" src="main.js" defer></script>
 </head>
 <body>
-
+    <h1>Sentence Sentiment Analyzer</h1>
+    <div id="input_div">
+        <form>
+            <h3>Enter a sentence for sentiment analysis here:</h3>
+            <input id="sentence_input" type="text" placeholder="Enter your sentence here">
+            <button id="submit_button">Submit</button>
+        </form>
+    </div>
+    <div id="result_div">
+        <p id="result"></p>
+    </div>
 </body>
 </html>
